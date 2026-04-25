@@ -18,7 +18,7 @@ body {
 }
 
 /* HEADER */
-header {position: fixed; }
+header { position: fixed; }
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -64,12 +64,14 @@ header a:hover {
 }
 
 /* WORK LIST */
+
 .work-list {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   gap: 20px;
+  overflow-x: auto;   /* allows horizontal scroll */
+  padding-bottom: 10px;
 }
-
 .work-item {
   padding: 20px;
   border-left: 2px solid #60a5fa;
